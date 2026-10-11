@@ -1,0 +1,101 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Arianna Davis": {},
+    "Ofer Perl": {},
+    "Brian Kopell": {},
+    "Matthew Heflin": {},
+    "Salman Qasim": {},
+    "Zarghona Imtiaz": {},
+    "Ayaka Kato": {},
+    "Soojung Na": {},
+    "Navid Mikail": {},
+    "Helen S. Mayberg": {},
+    "P. Read Montague": {},
+    "Ignacio Saez": {},
+    "Xiaosi Gu": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.6084/m9.figshare.29082671.v2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000477",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000477",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "NIH",
+      "award_number": "R01MH124115"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "F30MH135658"
+    }
+  ],
+  "title": "DavisSN-UG: intraoperative microelectrode recordings in human substantia nigra and globus pallidus during a social ultimatum game (Davis et al., 2025)",
+  "license": "CC-BY-4.0",
+  "dataset_type": "raw",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "12.80 GB (217 files)"
+  ],
+  "formats": [
+    ".csv",
+    ".eeg",
+    ".json",
+    ".mat",
+    ".py",
+    ".tsv",
+    ".txt",
+    ".vhdr",
+    ".vmrk",
+    ".xlsx"
+  ],
+  "description": "Intraoperative single-unit microelectrode recordings from the human substantia nigra and globus pallidus in neurosurgical patients undergoing deep brain stimulation surgery while playing a social ultimatum game. The dataset includes wideband microelectrode and macro-contact recordings, along with task synchronization events, to study how single neurons encode social learning signals. It is a BIDS conversion of a figshare release, covering 24 participants and 67 runs.",
+  "methods_description": "Wideband raw streams were recorded at 44 kHz with Alpha Omega systems from the microelectrode tip and the macro contact of the same lead during DBS surgery. Participants played a social ultimatum game. Integer counts were scaled to microvolts and written as BrainVision float32 files. Digital-input TTL edges were converted to events.tsv, and the side, track and depth of each run come from the Alpha Omega file names.",
+  "keywords": [
+    {
+      "term": "microelectrode recording"
+    },
+    {
+      "term": "Substantia Nigra",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013378"
+    },
+    {
+      "term": "Globus Pallidus",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005917"
+    },
+    {
+      "term": "single neurons"
+    },
+    {
+      "term": "social learning"
+    },
+    {
+      "term": "ultimatum game"
+    },
+    {
+      "term": "Deep Brain Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
+    }
+  ],
+  "source_hash": "7014411ce6fcb9e998bca40488d94abf5e92ac533018fa08a491e195581ab024"
+}
