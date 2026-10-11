@@ -1,0 +1,20 @@
+{
+  "age": {
+    "Description": "not released"
+  },
+  "sex": {
+    "Description": "not released"
+  },
+  "group": {
+    "Description": "neurosurgical patients undergoing DBS electrode implantation (release description; indication not given per participant)"
+  },
+  "target": {
+    "Description": "recording target (SN substantia nigra / GP globus pallidus)"
+  },
+  "game_version": {
+    "Description": "ultimatum game version played (UG1/UG2)"
+  },
+  "n_sessions": {
+    "Description": "ses-1 = release folder ptNNNN, ses-2 = ptNNNN_2 (second recording side/day)"
+  }
+}

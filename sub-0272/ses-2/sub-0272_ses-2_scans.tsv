@@ -1,0 +1,3 @@
+filename	acq_time	ao_file	hemisphere	track	depth_mm	target	game_version
+ieeg/sub-0272_ses-2_task-ultimatum_run-03_ieeg.vhdr	n/a	RT1D-0.822F0003	right	1	-0.822	SN	UG1
+ieeg/sub-0272_ses-2_task-ultimatum_run-04_ieeg.vhdr	n/a	RT1D-0.822F0004	right	1	-0.822	SN	UG1

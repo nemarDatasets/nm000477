@@ -1,0 +1,23 @@
+{
+  "TaskName": "ultimatum",
+  "TaskDescription": "Social exchange (ultimatum) game, release version UG1 (UG1: no mood ratings, human condition only; UG2: mood ratings, human and computer conditions; release description) played during intraoperative single-unit recording.",
+  "PowerLineFrequency": 60,
+  "SoftwareFilters": "n/a",
+  "HardwareFilters": "n/a",
+  "iEEGReference": "n/a",
+  "iEEGPlacementScheme": "Intraoperative microelectrode recording in the right substantia nigra during DBS surgery (release folder Data_SN_UG1; file name RT1D-1.663F0003: right track 1, depth -1.663 mm)",
+  "Manufacturer": "Alpha Omega",
+  "ManufacturersModelName": "n/a (Alpha Omega MATLAB export, Neuro Omega)",
+  "ElectricalStimulation": false,
+  "InstitutionName": "n/a",
+  "SamplingFrequency": 44000.0,
+  "RecordingDuration": 59.072727,
+  "RecordingType": "continuous",
+  "ECOGChannelCount": 0,
+  "SEEGChannelCount": 2,
+  "DBSChannelCount": 0,
+  "EEGChannelCount": 0,
+  "EMGChannelCount": 0,
+  "MiscChannelCount": 0,
+  "TriggerChannelCount": 0
+}

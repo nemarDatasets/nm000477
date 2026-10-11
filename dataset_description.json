@@ -1,0 +1,55 @@
+{
+  "Name": "DavisSN-UG: intraoperative microelectrode recordings in human substantia nigra and globus pallidus during a social ultimatum game (Davis et al., 2025)",
+  "BIDSVersion": "1.10.0",
+  "DatasetType": "raw",
+  "License": "CC-BY-4.0",
+  "Authors": [
+    "Arianna Davis",
+    "Ofer Perl",
+    "Brian Kopell",
+    "Matthew Heflin",
+    "Salman Qasim",
+    "Zarghona Imtiaz",
+    "Ayaka Kato",
+    "Soojung Na",
+    "Navid Mikail",
+    "Helen S. Mayberg",
+    "P. Read Montague",
+    "Ignacio Saez",
+    "Xiaosi Gu"
+  ],
+  "HowToAcknowledge": "Cite the figshare dataset doi:10.6084/m9.figshare.29082671.v2 and the article \"Single neurons in the human substantia nigra encode social learning signals\" (Davis et al.).",
+  "ReferencesAndLinks": [
+    "https://doi.org/10.6084/m9.figshare.29082671.v2"
+  ],
+  "EthicsApprovals": [
+    "Collected under the source study's approval (Icahn School of Medicine at Mount Sinai per the behaviour logs); see the article associated with the figshare record"
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "doi:10.6084/m9.figshare.29082671.v2",
+      "URL": "https://figshare.com/articles/dataset/29082671",
+      "Version": "figshare version 2 (2025-10-14T22:31:54Z)"
+    }
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "o5c_B_conv_lit9.py",
+      "Description": "Alpha Omega MATLAB export RAW streams (int16) scaled to uV with the stored BitResolution/Gain, written as BrainVision float32; TTL edges to events.tsv; all release files in sourcedata/ (MAT header day set to 01). Code in code/."
+    }
+  ],
+  "Funding": [
+    "R01MH124115",
+    "F30MH135658"
+  ],
+  "Keywords": [
+    "substantia nigra",
+    "globus pallidus",
+    "microelectrode recording",
+    "single neurons",
+    "dopamine",
+    "social learning",
+    "ultimatum game",
+    "DBS surgery"
+  ]
+}

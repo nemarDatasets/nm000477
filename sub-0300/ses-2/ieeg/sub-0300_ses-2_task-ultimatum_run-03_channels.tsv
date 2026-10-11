@@ -1,0 +1,3 @@
+name	type	units	low_cutoff	high_cutoff	sampling_frequency	reference	group	status	status_description	description
+RT3micro01	SEEG	µV	n/a	n/a	44000.0	n/a	RT3	good	n/a	microelectrode tip, wideband RAW stream (Alpha Omega channel CRAW_01; int16 x BitResolution 38.14697265625 / Gain 20.0)
+RT3macro01	SEEG	µV	n/a	n/a	44000.0	n/a	RT3	good	n/a	macro contact of the same lead, wideband RAW stream (Alpha Omega channel CMacro_RAW_01; int16 x BitResolution 38.14697265625 / Gain 20.0)

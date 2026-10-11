@@ -1,0 +1,11 @@
+{
+  "trial_type": {
+    "Description": "ttl_up / ttl_down = rising / falling edge of an Alpha Omega digital input (task synchronisation pulses; the release does not document their meaning)"
+  },
+  "value": {
+    "Description": "edge sample index in the digital-input clock (CDIG_IN_x_Up/_Down of the release)"
+  },
+  "source_channel": {
+    "Description": "Alpha Omega digital input channel"
+  }
+}

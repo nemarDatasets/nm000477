@@ -1,0 +1,24 @@
+{
+  "acq_time": {
+    "Description": "not released"
+  },
+  "ao_file": {
+    "Description": "Alpha Omega file name of the release: <L|R>T<track>D<depth>F<file>"
+  },
+  "hemisphere": {
+    "Description": "from the file name (LT = left track, RT = right track)"
+  },
+  "track": {
+    "Description": "microelectrode track number from the file name"
+  },
+  "depth_mm": {
+    "Description": "recording depth from the file name (Alpha Omega drive depth, mm; negative = below target as defined by the drive)",
+    "Units": "mm"
+  },
+  "target": {
+    "Description": "SN = substantia nigra, GP = globus pallidus (release folder)"
+  },
+  "game_version": {
+    "Description": "UG1 / UG2 (release folder)"
+  }
+}

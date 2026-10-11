@@ -1,0 +1,302 @@
+{
+  "files": [
+    {
+      "id": 54582545,
+      "name": "Code.zip",
+      "size": 93138,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/54582545",
+      "supplied_md5": "e449dc6192dfdd02a211f41e3c71ee50",
+      "computed_md5": "e449dc6192dfdd02a211f41e3c71ee50",
+      "mimetype": "application/zip"
+    },
+    {
+      "id": 54582686,
+      "name": "Data_SN_UG1.zip",
+      "size": 617616679,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/54582686",
+      "supplied_md5": "5824dc855a0ac99718910944131e871a",
+      "computed_md5": "5824dc855a0ac99718910944131e871a",
+      "mimetype": "application/zip"
+    },
+    {
+      "id": 54582944,
+      "name": "Data_SN_UG2.zip",
+      "size": 1026022374,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/54582944",
+      "supplied_md5": "fa5e1d17c147f262cf1d05cc0c559c05",
+      "computed_md5": "fa5e1d17c147f262cf1d05cc0c559c05",
+      "mimetype": "application/zip"
+    },
+    {
+      "id": 54583136,
+      "name": "Data_SN_morph-unit-plots.zip",
+      "size": 1079031,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/54583136",
+      "supplied_md5": "b870b9292336d410d4dbdbd6477cf9c4",
+      "computed_md5": "b870b9292336d410d4dbdbd6477cf9c4",
+      "mimetype": "application/zip"
+    },
+    {
+      "id": 54583241,
+      "name": "Data_GP.zip",
+      "size": 364766504,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/54583241",
+      "supplied_md5": "e56c673d3ff8fa55484c2a0434fe4e29",
+      "computed_md5": "e56c673d3ff8fa55484c2a0434fe4e29",
+      "mimetype": "application/zip"
+    },
+    {
+      "id": 58739347,
+      "name": "Q_learning.m",
+      "size": 1103,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/58739347",
+      "supplied_md5": "6d1438965edb7c34ca52a556dd3fb140",
+      "computed_md5": "6d1438965edb7c34ca52a556dd3fb140",
+      "mimetype": "text/plain"
+    }
+  ],
+  "folder_structure": {},
+  "authors": [
+    {
+      "id": 21370643,
+      "full_name": "Arianna Davis",
+      "first_name": "Arianna",
+      "last_name": "Davis",
+      "is_active": true,
+      "url_name": "Arianna_Davis",
+      "orcid_id": ""
+    },
+    {
+      "id": 21087390,
+      "full_name": "Ofer Perl",
+      "first_name": "Ofer",
+      "last_name": "Perl",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 21087393,
+      "full_name": "Brian Kopell",
+      "first_name": "Brian",
+      "last_name": "Kopell",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 21087394,
+      "full_name": "Matthew Heflin",
+      "first_name": "Matthew",
+      "last_name": "Heflin",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 21087405,
+      "full_name": "Salman Qasim",
+      "first_name": "Salman",
+      "last_name": "Qasim",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 21087396,
+      "full_name": "Zarghona Imtiaz",
+      "first_name": "Zarghona",
+      "last_name": "Imtiaz",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 21087408,
+      "full_name": "Ayaka Kato",
+      "first_name": "Ayaka",
+      "last_name": "Kato",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 21087397,
+      "full_name": "Soojung Na",
+      "first_name": "Soojung",
+      "last_name": "Na",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 21087399,
+      "full_name": "Navid Mikail",
+      "first_name": "Navid",
+      "last_name": "Mikail",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 6867023,
+      "full_name": "Helen S. Mayberg",
+      "first_name": "Helen S.",
+      "last_name": "Mayberg",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 21087402,
+      "full_name": "P. Read Montague",
+      "first_name": "P. Read",
+      "last_name": "Montague",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 15195659,
+      "full_name": "Ignacio Saez",
+      "first_name": "Ignacio",
+      "last_name": "Saez",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 18967078,
+      "full_name": "Xiaosi Gu",
+      "first_name": "Xiaosi",
+      "last_name": "Gu",
+      "is_active": true,
+      "url_name": "Xiaosi_Gu",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://figshare.com/articles/dataset/Single_neurons_in_the_human_substantia_nigra_encode_social_learning_signals/29082671",
+  "download_disabled": false,
+  "description": "<h2>Description of the data and file structure</h2><p dir=\"ltr\">Behavioral and electrophysiological data were collected from neurosurgical patients who played a social exchange game while undergoing single-unit electrophysiological recording from the substantia nigra and globus pallidus in order to delineate the potential roles of these neurons in encoding social learning signals.</p><h3>Files and variables</h3><h4>File: Code.zip</h4><p dir=\"ltr\"><b>Description:</b> This compressed folder contains all scripts required to conduct the behavioral and neural analyses presented in the paper. It is organized into two subfolders: behavior and neural. The behavior folder is further organized into a prep folder and a modeling folder. The scripts in the prep folder are what were used for data cleaning, organizing, and model-free analyses. All model scripts are in the modeling folder. Scripts for carrying out neural analyses are in the neural folder. Note you will also need to download the OSORT offline sorting algorithm, which is linked as a related work here and also cited in the paper.</p><h4>File: Data_GP.zip</h4><p dir=\"ltr\"><b>Description:</b> This compressed folder contains all behavioral and neural data collected from participants who underwent single unit recording in the globus pallidus. This data is split into two folders, UG1 and UG2, corresponding to the two versions of the game played by participants. In each of these folders, data is further split into one folder per session. Each session folder contains a behavior folder, which contains the raw behavioral data, and a neural folder, which contains the raw neural data (.mat files) as well as a merging spreadsheet, detailing how clusters identified with OSORT were merged into putative units for that session.</p><h4>File: Data_SN_morph-unit-plots.zip</h4><p dir=\"ltr\"><b>Description:</b> This compressed folder contains the average waveforms for all putative dopaminergic units identified from neural recordings in the substantia nigra. Each waveform is stored under its unit number, corresponding to the merge sheets in the neural data folders. Any unit that is in a merge file but not listed in this folder was not classified as putatively dopaminergic.</p><h4>File: Data_SN_UG2.zip</h4><p dir=\"ltr\"><b>Description:</b> This compressed folder has the same organization structure as Data_GP.zip, but corresponds to data collected for participants who underwent recording in the substantia nigra and played the version of the game that contained mood ratings and both the human and computer conditions.</p><h4>File: Data_SN_UG1.zip</h4><p dir=\"ltr\"><b>Description:</b> This compressed folder has the same organization structure as Data_GP.zip, but corresponds to data collected for participants who underwent recording in the substantia nigra and played the version of the game that contained no mood ratings and only the human condition.</p><h4>File: Q_learning.m</h4><p dir=\"ltr\"><b>Description:</b> This is the additional Q-learning model, compared in the manuscript to the norma adaptation models by adding to the model list in all_models_allfixedalpha.m.</p><h2>Code/software</h2><p dir=\"ltr\">First, analyze the behavioral data for each cohort, beginning with the Code/behavior/prep folder and then the Code/behavior/modeling folder. Next, analyze the neural data by identifying putative units using the OSORT offline sorting algorithm (linked in related works and cited in the paper). Phenotype those putative units as putatively dopaminergic by waveform width and firing rate using the scripts in the Code/neural folder. Then, use the scripts \"raster<i>s</i>teps.m\" and \"mpsth_AN.m\" in the Code/neural folder to compute and save continuous z-scored firing rates at split reveal and mood choice for each putative unit. Lastly, use the regression scripts to relate continuous firing rates to behavioral variables and also to generate relevant visualizations. All figures in the paper were generated using the code provided in these scripts. You will need MATLAB and R to recapitulate these analyses. All required R packages are loaded in the R scripts.</p>",
+  "funding": "R01MH124115",
+  "funding_list": [
+    {
+      "id": 28195064,
+      "title": "R01MH124115",
+      "grant_code": "",
+      "funder_name": null,
+      "is_user_defined": 1
+    },
+    {
+      "id": 28195067,
+      "title": "F30MH135658",
+      "grant_code": "",
+      "funder_name": null,
+      "is_user_defined": 1
+    }
+  ],
+  "version": 2,
+  "status": "public",
+  "size": 2009578829,
+  "created_date": "2025-10-14T22:31:55Z",
+  "modified_date": "2025-10-14T22:31:55Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "tags": [
+    "substantia nigra",
+    "prediction error",
+    "social"
+  ],
+  "keywords": [
+    "substantia nigra",
+    "prediction error",
+    "social"
+  ],
+  "categories": [
+    {
+      "id": 30373,
+      "title": "Cognition",
+      "parent_id": 30370,
+      "path": "/30292/30370/30373",
+      "source_id": "520401",
+      "taxonomy_id": 100
+    },
+    {
+      "id": 30376,
+      "title": "Decision making",
+      "parent_id": 30370,
+      "path": "/30292/30370/30376",
+      "source_id": "520402",
+      "taxonomy_id": 100
+    },
+    {
+      "id": 30331,
+      "title": "Behavioural neuroscience",
+      "parent_id": 30325,
+      "path": "/30292/30325/30331",
+      "source_id": "520202",
+      "taxonomy_id": 100
+    },
+    {
+      "id": 30334,
+      "title": "Cognitive neuroscience",
+      "parent_id": 30325,
+      "path": "/30292/30325/30334",
+      "source_id": "520203",
+      "taxonomy_id": 100
+    },
+    {
+      "id": 30346,
+      "title": "Social and affective neuroscience",
+      "parent_id": 30325,
+      "path": "/30292/30325/30346",
+      "source_id": "520207",
+      "taxonomy_id": 100
+    }
+  ],
+  "references": [],
+  "has_linked_file": false,
+  "citation": "Davis, Arianna; Perl, Ofer; Kopell, Brian; Heflin, Matthew; Qasim, Salman; Imtiaz, Zarghona; et al. (2025). Single neurons in the human substantia nigra encode social learning signals. figshare. Dataset. https://doi.org/10.6084/m9.figshare.29082671.v2",
+  "related_materials": [],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": null,
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 29082671,
+  "title": "Single neurons in the human substantia nigra encode social learning signals",
+  "doi": "10.6084/m9.figshare.29082671.v2",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/29082671",
+  "published_date": "2025-10-14T22:31:54Z",
+  "thumb": "",
+  "defined_type": 3,
+  "defined_type_name": "dataset",
+  "group_id": null,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/29082671",
+  "url_public_api": "https://api.figshare.com/v2/articles/29082671",
+  "url_private_html": "https://figshare.com/account/articles/29082671",
+  "url_public_html": "https://figshare.com/articles/dataset/Single_neurons_in_the_human_substantia_nigra_encode_social_learning_signals/29082671",
+  "timeline": {
+    "posted": "2025-10-14T22:31:54",
+    "firstOnline": "2025-05-15"
+  },
+  "resource_title": null,
+  "resource_doi": null
+}

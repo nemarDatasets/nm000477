@@ -1,0 +1,23 @@
+{
+  "TaskName": "ultimatum",
+  "TaskDescription": "Social exchange (ultimatum) game, release version UG1 (UG1: no mood ratings, human condition only; UG2: mood ratings, human and computer conditions; release description) played during intraoperative single-unit recording.",
+  "PowerLineFrequency": 60,
+  "SoftwareFilters": "n/a",
+  "HardwareFilters": "n/a",
+  "iEEGReference": "n/a",
+  "iEEGPlacementScheme": "Intraoperative microelectrode recording in the left globus pallidus during DBS surgery (release folder Data_GP; file name LT1D4.163F0003: left track 1, depth 4.163 mm)",
+  "Manufacturer": "Alpha Omega",
+  "ManufacturersModelName": "n/a (Alpha Omega MATLAB export, Neuro Omega)",
+  "ElectricalStimulation": false,
+  "InstitutionName": "n/a",
+  "SamplingFrequency": 44000.0,
+  "RecordingDuration": 237.545818,
+  "RecordingType": "continuous",
+  "ECOGChannelCount": 0,
+  "SEEGChannelCount": 2,
+  "DBSChannelCount": 0,
+  "EEGChannelCount": 0,
+  "EMGChannelCount": 0,
+  "MiscChannelCount": 0,
+  "TriggerChannelCount": 0
+}
