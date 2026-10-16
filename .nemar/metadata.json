@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Intraoperative microelectrode recordings in human substantia nigra and globus pallidus during a social ultimatum game",
-  "description": "Intraoperative single-neuron microelectrode recordings from the human substantia nigra and globus pallidus in neurosurgical patients undergoing DBS surgery while playing a social ultimatum exchange game. The dataset includes wideband microelectrode and macro-contact recordings at 44 kHz from 24 participants across 33 sessions, with task synchronization events. It supports investigation of how midbrain and pallidal neurons encode social learning signals.",
-  "methods_description": "Alpha Omega wideband RAW streams (microelectrode tip and macro contact, 44 kHz) were recorded at successive electrode positions during DBS surgery while patients played a social ultimatum game. Int16 counts were scaled to microvolts and converted to BrainVision float32 format, with TTL digital input edges written as events.",
+  "description": "Intraoperative single-unit microelectrode recordings from the human substantia nigra and globus pallidus in neurosurgical patients undergoing DBS surgery while playing a social ultimatum game. The dataset includes wideband microelectrode and macro-contact recordings from 24 participants (67 runs, about 5.2 hours), converted to BIDS in BrainVision format with task synchronisation events. It supports investigation of how midbrain and basal ganglia neurons encode social learning signals.",
+  "methods_description": "Alpha Omega wideband RAW streams (microelectrode tip and macro contact, 44 kHz) were recorded intraoperatively during a social exchange game. Int16 counts were scaled to microvolts and written as BrainVision float32 files. TTL digital-input edges were converted to events.tsv. Side, track and depth for each run were derived from Alpha Omega file names.",
   "license": "CC-BY-4.0",
   "dataset_type": "raw",
   "authors": {
@@ -26,9 +26,6 @@
       "term": "microelectrode recording"
     },
     {
-      "term": "single neurons"
-    },
-    {
       "term": "Substantia Nigra",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D013378"
@@ -37,6 +34,9 @@
       "term": "Globus Pallidus",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D005917"
+    },
+    {
+      "term": "single neurons"
     },
     {
       "term": "social learning"
