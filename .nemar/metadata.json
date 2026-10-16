@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
-  "title": "Davis-2026-single-10.64898/2026.09.18.752742",
+  "title": "Intraoperative microelectrode recordings in human substantia nigra and globus pallidus during a social ultimatum game",
   "description": "Intraoperative single-neuron microelectrode recordings from the human substantia nigra and globus pallidus in neurosurgical patients undergoing DBS surgery while playing a social ultimatum exchange game. The dataset includes wideband microelectrode and macro-contact recordings at 44 kHz from 24 participants across 33 sessions, with task synchronization events. It supports investigation of how midbrain and pallidal neurons encode social learning signals.",
   "methods_description": "Alpha Omega wideband RAW streams (microelectrode tip and macro contact, 44 kHz) were recorded at successive electrode positions during DBS surgery while patients played a social ultimatum game. Int16 counts were scaled to microvolts and converted to BrainVision float32 format, with TTL digital input edges written as events.",
   "license": "CC-BY-4.0",
@@ -99,5 +99,5 @@
     ".xlsx",
     ".yml"
   ],
-  "source_hash": "06fd78de530ee80280213b401d30917fd505f9448bdd3e08fa6ecf645cad942f"
+  "source_hash": "3f45da2be8f68e5f0551ab95b60c0f3c9590d0e34af6b46ed2131094064c1363"
 }

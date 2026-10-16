@@ -1,5 +1,5 @@
 {
-  "Name": "Davis-2026-single-10.64898/2026.09.18.752742",
+  "Name": "Intraoperative microelectrode recordings in human substantia nigra and globus pallidus during a social ultimatum game",
   "BIDSVersion": "1.10.0",
   "DatasetType": "raw",
   "License": "CC-BY-4.0",
@@ -53,5 +53,5 @@
     "DBS surgery"
   ],
   "DatasetDOI": "10.82901/nemar.nm000477",
-  "Version": "1.0.1"
+  "Version": "1.0.2"
 }

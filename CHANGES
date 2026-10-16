@@ -1,0 +1,3 @@
+1.0.2 2026-10-16
+  - The publication-year attribution was omitted because the reviewed README and cited preprint years conflict. Update generated metadata title and source hash.
+
