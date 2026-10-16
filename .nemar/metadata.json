@@ -1,9 +1,9 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
-  "title": "DavisSN-UG: intraoperative microelectrode recordings in human substantia nigra and globus pallidus during a social ultimatum game (Davis et al., 2025)",
-  "description": "Intraoperative single-unit microelectrode recordings from the substantia nigra and globus pallidus of neurosurgical patients undergoing deep brain stimulation surgery while playing a social ultimatum game. The dataset includes wideband microelectrode and macro-contact recordings from 24 participants across 33 sessions (67 runs, about 5.2 hours), with task synchronisation events. It supports investigation of how human midbrain and basal ganglia neurons encode social learning signals.",
-  "methods_description": "Alpha Omega wideband RAW streams (44 kHz) were recorded from the microelectrode tip and the macro contact of the same lead during DBS surgery while patients played a social exchange (ultimatum) game. The int16 counts were scaled to microvolts and converted to BrainVision float32 format, and TTL digital-input edges were exported as events. Side, track and depth of each recording position are given per run.",
+  "title": "Davis-2026-single-10.64898/2026.09.18.752742",
+  "description": "Intraoperative single-neuron microelectrode recordings from the human substantia nigra and globus pallidus in neurosurgical patients undergoing DBS surgery while playing a social ultimatum exchange game. The dataset includes wideband microelectrode and macro-contact recordings at 44 kHz from 24 participants across 33 sessions, with task synchronization events. It supports investigation of how midbrain and pallidal neurons encode social learning signals.",
+  "methods_description": "Alpha Omega wideband RAW streams (microelectrode tip and macro contact, 44 kHz) were recorded at successive electrode positions during DBS surgery while patients played a social ultimatum game. Int16 counts were scaled to microvolts and converted to BrainVision float32 format, with TTL digital input edges written as events.",
   "license": "CC-BY-4.0",
   "dataset_type": "raw",
   "authors": {
@@ -22,9 +22,6 @@
     "Xiaosi Gu": {}
   },
   "keywords": [
-    {
-      "term": "intracranial electrophysiology"
-    },
     {
       "term": "microelectrode recording"
     },
@@ -102,5 +99,5 @@
     ".xlsx",
     ".yml"
   ],
-  "source_hash": "5f9c2a8687163997703dea941e12cab48d3e26f3a6b06c7dfd48949ae64a6269"
+  "source_hash": "06fd78de530ee80280213b401d30917fd505f9448bdd3e08fa6ecf645cad942f"
 }
