@@ -15,6 +15,6 @@
     "Description": "ultimatum game version played (UG1/UG2)"
   },
   "n_sessions": {
-    "Description": "ses-1 = release folder ptNNNN, ses-2 = ptNNNN_2 (second recording side/day)"
+    "Description": "Number of sessions with neural recordings in this dataset (ses-1 = release folder ptNNNN, ses-2 = ptNNNN_2, a second recording side/day). sub-0409: the release folder pt0409 holds only a behaviour file (behavior/409.csv, kept in sourcedata/figshare-29082671/UG2/pt0409/), so sub-0409 has ses-2 only and n_sessions 1 (was 2 up to version 1.0.2)."
   }
 }

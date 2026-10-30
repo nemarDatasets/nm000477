@@ -1,3 +1,10 @@
+Unreleased (branch fix-20261030, Oct 2026)
+  - participants.tsv/json: sub-0409 n_sessions 2 -> 1 (pt0409 holds only a behaviour file); README notes on n_sessions and on the SEEG type of the micro/macro channels.
+
+1.0.3 2026-10-30
+
+  - Correct one participant's session count
+
 1.0.2 2026-10-16
   - The publication-year attribution was omitted because the reviewed README and cited preprint years conflict. Update generated metadata title and source hash.
 

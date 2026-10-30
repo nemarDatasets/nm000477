@@ -28,3 +28,13 @@ hemisphere, track and depth per run are in scans.tsv.
 ## Provenance
 Converted by the ieeg-nemar-20261005 campaign (lane o5c-B) with `code/o5c_B_conv_lit9.py` (round-trip checks in
 code/conversion_report.json).
+
+## Sessions and channel types (fix-20261030, Oct 2026)
+
+- `participants.tsv` `n_sessions` now counts sessions with neural recordings (sum 33, equal to the session folders).
+  sub-0409 was 2: its release folder `pt0409` has only the behaviour file `409.csv` (kept in sourcedata), and the
+  recordings are in `pt0409_2` (ses-2).
+- Channel types: the microelectrode tips (`...micro<nn>`) and the macro contacts (`...macro<nn>`) are typed SEEG. They
+  are intraoperative recordings along the DBS trajectory, not stereo-EEG; BIDS has no type for microelectrode recordings,
+  and other NEMAR copies of intraoperative MER use DBS. The type is kept until a common rule is chosen for these datasets;
+  the channel descriptions say which contact each channel is.
