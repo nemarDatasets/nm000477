@@ -29,11 +29,20 @@ hemisphere, track and depth per run are in scans.tsv.
 Converted by the ieeg-nemar-20261005 campaign (lane o5c-B) with `code/o5c_B_conv_lit9.py` (round-trip checks in
 code/conversion_report.json).
 
-## Sessions and channel types (fix-20261030, Oct 2026)
+## Sessions and channel types (version 1.0.3, Oct 2026)
 
-- `participants.tsv` `n_sessions` now counts sessions with neural recordings (sum 33, equal to the session folders).
-  sub-0409 was 2: its release folder `pt0409` has only the behaviour file `409.csv` (kept in sourcedata), and the
-  recordings are in `pt0409_2` (ses-2).
+- sub-0409, session 1 (release folder `pt0409`) is not converted. Besides the behaviour file `409.csv`, the folder
+  holds one Alpha Omega file, `neural/LT1D-1.740F0002.mat` (342,316,720 bytes, kept in
+  `sourcedata/figshare-29082671/UG2/pt0409/`), with a 954.2-s recording: the wideband streams `CRAW_01___Central`
+  (microelectrode tip) and `CMacro_RAW_01___Central` (macro contact) at 44 kHz, 41,982,929 samples each, plus the
+  online LFP (1.375 kHz), spike, segment and analog-input streams. Its variable names carry a `___Central` suffix that
+  the other files of the release do not have, so the converter's name pattern (`CRAW_<nn>` / `CMacro_RAW_<nn>`) did not
+  match them and listed the file under `no_raw` in `code/conversion_report.json`. The recording is not a copy of the
+  converted `pt0409_2` files: its device-clock span (6693.96-7648.11 s) overlaps those of `RT1D-0.607F0003` and
+  `RT1D-0.607F0004`, but their samples differ (correlation at most 0.24 over +-200 samples of lag; check of 2 Nov 2026).
+  `participants.tsv` keeps `n_sessions` = 2 for sub-0409, as published: the release has two recording sessions for this
+  participant, of which only ses-2 is converted here. (A note of 30 Oct 2026 on a working branch said that `pt0409`
+  holds only the behaviour file; that was wrong.)
 - Channel types: the microelectrode tips (`...micro<nn>`) and the macro contacts (`...macro<nn>`) are typed SEEG. They
   are intraoperative recordings along the DBS trajectory, not stereo-EEG; BIDS has no type for microelectrode recordings,
   and other NEMAR copies of intraoperative MER use DBS. The type is kept until a common rule is chosen for these datasets;

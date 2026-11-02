@@ -1,9 +1,9 @@
-Unreleased (branch fix-20261030, Oct 2026)
-  - participants.tsv/json: sub-0409 n_sessions 2 -> 1 (pt0409 holds only a behaviour file); README notes on n_sessions and on the SEEG type of the micro/macro channels.
-
 1.0.3 2026-10-30
 
-  - Correct one participant's session count
+  - README: section "Sessions and channel types": sub-0409 session 1 (release folder pt0409) holds a 954-s Alpha
+    Omega recording (neural/LT1D-1.740F0002.mat, kept in sourcedata) that was not converted, because its stream
+    names carry a '___Central' suffix the converter did not match; the type (SEEG) of the microelectrode and macro
+    channels is explained. participants.tsv and participants.json unchanged (n_sessions of sub-0409 stays 2).
 
 1.0.2 2026-10-16
   - The publication-year attribution was omitted because the reviewed README and cited preprint years conflict. Update generated metadata title and source hash.
