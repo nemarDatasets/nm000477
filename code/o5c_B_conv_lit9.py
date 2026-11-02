@@ -55,13 +55,18 @@ for z, target, game, pd in sessions:
             who = {n: (shape, cls) for n, shape, cls in sio.whosmat(aop)}; full = None
         except TypeError:
             full = sio.loadmat(aop, squeeze_me=True); who = {n: (np.shape(v), "") for n, v in full.items() if not n.startswith("__")}
+        # fix-20261102: some files (UG2/pt0409/neural/LT1D-1.740F0002.mat) name their streams with a '___Central' suffix
+        # (CRAW_01___Central, ...); match names with the suffix removed and read them under their original names.
+        alias = {n.replace("___Central", ""): n for n in who}
+        who = {k: who[n] for k, n in alias.items()}
         raw = sorted([n for n in who if re.fullmatch(r"C(RAW|Macro_RAW)_\d+", n)], key=lambda n: (n.startswith("CMacro"), n))
         if not raw:
             rep.setdefault("no_raw", []).append(os.path.relpath(aop, X_)); continue
         meta_names = [f"{n}_{k}" for n in raw for k in ("KHz", "KHz_Orig", "BitResolution", "Gain", "TimeBegin", "TimeEnd") if f"{n}_{k}" in who]
         dig = sorted({m.group(1) for n in who for m in [re.fullmatch(r"(CDIG_IN_\d+)_Up", n)] if m})
         dig_names = [f"{d}_{k}" for d in dig for k in ("Up", "Down", "KHz", "TimeBegin") if f"{d}_{k}" in who]
-        m = full if full is not None else sio.loadmat(aop, variable_names=raw + meta_names + dig_names, squeeze_me=True)
+        m = full if full is not None else sio.loadmat(aop, variable_names=[alias[k] for k in raw + meta_names + dig_names], squeeze_me=True)
+        m = {k: m[alias[k]] for k in raw + meta_names + dig_names if alias[k] in m}
         lens = {n: int(np.asarray(m[n]).size) for n in raw}; t0s = {n: float(m[f"{n}_TimeBegin"]) for n in raw}
         n_s = min(lens.values()); t0 = min(t0s.values())
         trunc = {n: lens[n] - n_s for n in raw if lens[n] != n_s}
@@ -87,7 +92,7 @@ for z, target, game, pd in sessions:
             "iEEGPlacementScheme": f"Intraoperative microelectrode recording in the {hemi} {'substantia nigra' if target == 'SN' else 'globus pallidus'} during DBS surgery (release folder {z.split('.')[0]}; file name {fn}: {'left' if side == 'L' else 'right'} track {track}, depth {depth} mm)",
             "Manufacturer": "Alpha Omega", "ManufacturersModelName": "n/a (Alpha Omega MATLAB export, Neuro Omega)", "ElectricalStimulation": False,
             "InstitutionName": "n/a"},
-            ch_extra=[{"description": ("microelectrode tip, wideband RAW stream" if n.startswith("CRAW") else "macro contact of the same lead, wideband RAW stream") + f" (Alpha Omega channel {n}; int16 x BitResolution {float(m[n + '_BitResolution'])} / Gain {float(m[n + '_Gain'])})",
+            ch_extra=[{"description": ("microelectrode tip, wideband RAW stream" if n.startswith("CRAW") else "macro contact of the same lead, wideband RAW stream") + f" (Alpha Omega channel {alias[n]}; int16 x BitResolution {float(m[n + '_BitResolution'])} / Gain {float(m[n + '_Gain'])})",
                        "group": f"{side}T{track}" if mm else "n/a"} for n in raw],
             comment=f"{CONV}: {os.path.relpath(aop, X_)} {','.join(raw)}", scale=scale)
         wtsv(os.path.join(D, stem + "_events.tsv"), ["onset", "duration", "trial_type", "value", "sample", "source_channel"], ev)

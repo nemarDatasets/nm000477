@@ -1,3 +1,15 @@
+1.0.3 2026-11-02
+
+  - sub-0409 ses-1 added: release folder UG2/pt0409, Alpha Omega file LT1D-1.740F0002.mat, as run-02 (954.2 s,
+    2 channels at 44 kHz, 41,982,929 samples). Its stream names carry a '___Central' suffix, which the converter's
+    name pattern did not match in 1.0.0. The pattern is widened in code/o5c_B_conv_lit9.py, and the file was converted
+    with code/fix-20261102_convert_pt0409.py. Every sample equals float32(int16 x BitResolution / Gain) of the .mat
+    (code/fix-20261102_pt0409_conversion.json). New files: ieeg .eeg/.vhdr/.vmrk/.json, channels.tsv, events.tsv/.json,
+    electrodes.tsv, coordsystem.json and scans.tsv of sub-0409 ses-1. Now 68 runs, 34 sessions.
+  - participants.tsv/json unchanged: n_sessions of sub-0409 stays 2, as published, and both sessions are now converted.
+  - README: the published text is kept unchanged. The section "Sessions and channel types" is added (sub-0409 ses-1; why
+    the microelectrode and macro channels are typed SEEG).
+
 1.0.2 2026-10-16
   - The publication-year attribution was omitted because the reviewed README and cited preprint years conflict. Update generated metadata title and source hash.
 
