@@ -1,0 +1,5 @@
+{
+  "iEEGCoordinateSystem": "Other",
+  "iEEGCoordinateUnits": "n/a",
+  "iEEGCoordinateSystemDescription": "No coordinates are released. Target structure (substantia nigra or globus pallidus) from the release folder; hemisphere, track and drive depth per run in scans.tsv. x, y, z = n/a."
+}
