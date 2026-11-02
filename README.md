@@ -31,18 +31,23 @@ code/conversion_report.json).
 
 ## Sessions and channel types (version 1.0.3, Oct 2026)
 
-- sub-0409, session 1 (release folder `pt0409`) is not converted. Besides the behaviour file `409.csv`, the folder
-  holds one Alpha Omega file, `neural/LT1D-1.740F0002.mat` (342,316,720 bytes, kept in
-  `sourcedata/figshare-29082671/UG2/pt0409/`), with a 954.2-s recording: the wideband streams `CRAW_01___Central`
-  (microelectrode tip) and `CMacro_RAW_01___Central` (macro contact) at 44 kHz, 41,982,929 samples each, plus the
-  online LFP (1.375 kHz), spike, segment and analog-input streams. Its variable names carry a `___Central` suffix that
-  the other files of the release do not have, so the converter's name pattern (`CRAW_<nn>` / `CMacro_RAW_<nn>`) did not
-  match them and listed the file under `no_raw` in `code/conversion_report.json`. The recording is not a copy of the
-  converted `pt0409_2` files: its device-clock span (6693.96-7648.11 s) overlaps those of `RT1D-0.607F0003` and
-  `RT1D-0.607F0004`, but their samples differ (correlation at most 0.24 over +-200 samples of lag; check of 2 Nov 2026).
-  `participants.tsv` keeps `n_sessions` = 2 for sub-0409, as published: the release has two recording sessions for this
-  participant, of which only ses-2 is converted here. (A note of 30 Oct 2026 on a working branch said that `pt0409`
-  holds only the behaviour file; that was wrong.)
+- sub-0409, session 1 (release folder `pt0409`) is converted in this version as `sub-0409/ses-1`, `run-02`. Besides the
+  behaviour file `409.csv`, the folder holds one Alpha Omega file, `neural/LT1D-1.740F0002.mat` (342,316,720 bytes, kept in
+  `sourcedata/figshare-29082671/UG2/pt0409/`; left track 1, depth -1.740 mm), with a 954.2-s recording: the
+  wideband streams `CRAW_01___Central` (microelectrode tip, channel `LT1micro01`) and `CMacro_RAW_01___Central` (macro
+  contact, `LT1macro01`) at 44 kHz, 41,982,929 samples each. The online LFP (1.375 kHz), spike, segment and
+  analog-input streams stay in sourcedata, as for the other files. Its variable names carry a `___Central` suffix that the
+  other files of the release do not have, so the converter's name pattern (`CRAW_<nn>` / `CMacro_RAW_<nn>`) did not match
+  them, and the first conversion listed the file under `no_raw` in `code/conversion_report.json` (that report is kept as
+  it was). The pattern in `code/o5c_B_conv_lit9.py` now accepts the suffix. This one file was converted with the same
+  steps by `code/fix-20261102_convert_pt0409.py`. Every sample of both channels equals float32(int16 x BitResolution /
+  Gain) of the .mat streams, and the int16 values are recovered exactly (`code/fix-20261102_pt0409_conversion.json`);
+  its 1458 digital-input edges are in events.tsv. The recording is not a copy of the `pt0409_2` files: its device-clock span (6693.96-7648.11 s) overlaps
+  those of `RT1D-0.607F0003` and `RT1D-0.607F0004`, but their samples differ (correlation at most 0.24 over +-200
+  samples of lag; check of 2 Nov 2026). With this session the dataset has 68 runs, 5.45 h,
+  24 participants and 34 sessions; the "Content" line above gives the counts of the first conversion.
+  `participants.tsv` keeps `n_sessions` = 2 for sub-0409, as published, and both sessions are now converted. (A note of
+  30 Oct 2026 on a working branch said that `pt0409` holds only the behaviour file; that was wrong.)
 - Channel types: the microelectrode tips (`...micro<nn>`) and the macro contacts (`...macro<nn>`) are typed SEEG. They
   are intraoperative recordings along the DBS trajectory, not stereo-EEG; BIDS has no type for microelectrode recordings,
   and other NEMAR copies of intraoperative MER use DBS. The type is kept until a common rule is chosen for these datasets;
